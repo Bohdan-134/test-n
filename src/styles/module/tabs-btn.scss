@@ -1,0 +1,52 @@
+@import '../utils/main.utils.scss';
+
+.tabs-btn {
+    position: relative;
+    z-index: 1;
+    width: 22rem;
+    height: 4.4rem;
+    background: rgba(255, 255, 255, 0.50);
+    border-radius: 2.2rem;
+    @include flex(row, space-between, center);
+    button {
+        width: 11rem;
+        height: 4.4rem;
+        background-color: transparent;
+        transition: color .3s;
+        font-family: $p-medium;
+        text-transform: uppercase;
+        letter-spacing: 0.0833px;
+        @include font(1.2rem, 500, normal, $darkblue);
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        width: 11rem;
+        height: 4.4rem;
+        background-color: $pink;
+        border-radius: 2.2rem;
+        transition: left .3s, right .3s;
+    }
+}
+
+.tabs-btn.tabs-btn__mon-active {
+    &::before {
+        left: 0;
+        right: auto;
+    }
+    .btn-mon-open {
+        color: $white;
+    }
+}
+
+.tabs-btn.tabs-btn__year-active {
+    &::before {
+        left: auto;
+        right: 0;
+    }
+    .btn-year-open {
+        color: $white;
+    }
+}

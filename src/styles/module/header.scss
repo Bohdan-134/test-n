@@ -1,0 +1,34 @@
+@import '../utils/main.utils.scss';
+
+.header {
+    padding: 2.8rem 0;
+    .header-container {
+        @include flex(row, space-between, center);
+    }
+}
+
+.btn-open-menu {
+    background-color: transparent;
+    @include flex(row, center, center);
+    svg {
+        use {
+            fill: $darkblue;
+            transition: fill .3s;
+        }
+    }
+    
+    &:hover {
+        svg {
+            use {
+                fill: $hover;
+            }
+        }
+    }
+}
+
+.btn-open-registration {
+    padding: 1rem 3rem;
+    border-radius: 2.5rem;
+    font-family: $p-medium;
+    @include font(1.4rem, 500, 1.8rem, $white);
+}

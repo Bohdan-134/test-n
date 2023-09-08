@@ -1,3 +1,4 @@
+@import './mixin.scss';
 @import './vars.scss';
 
 * {
@@ -87,4 +88,19 @@ h6 {
     font-size: inherit;
     padding: 0;
     margin: 0;
+}
+
+.btn {
+    transition: background-color .3s;
+    &:hover {
+        background-color: $hover;
+    }
+}
+
+.btn__pink {
+    background-color: $pink;
+}
+
+.btn__darkblue {
+    background-color: $darkblue;
 }

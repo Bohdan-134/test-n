@@ -1,4 +1,8 @@
 @import './utils/main.utils.scss';
-body {
-    background-color: red;
+@import './module/module.main.scss';
+
+.wrapper {
+    padding: 0 5rem;
+    min-height: 100%;
+    background: linear-gradient(180deg, #F5F5FA 0%, #F2DAD5 44.15%, #A0ABD6 100%);
 }

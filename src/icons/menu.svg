@@ -1,7 +1,7 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 <g id="menu">
 <g id="Group">
-<path id="Vector" d="M18 24H3V21.5H18V24ZM25.5 17.75H3V15.25H25.5V17.75ZM18 11.5H3V9H18V11.5Z" fill="#231D4F"/>
+<path id="Vector" d="M18 24H3V21.5H18V24ZM25.5 17.75H3V15.25H25.5V17.75ZM18 11.5H3V9H18V11.5Z"/>
 </g>
 </g>
 </svg>

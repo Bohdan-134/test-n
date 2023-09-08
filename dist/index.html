@@ -7,12 +7,23 @@
     <title>Jadwalin</title>
 </head>
 <body>
-    <h1>hello</h1>
-    <svg width="20" height="20">
-        <use xlink:href="./icons/sprite.svg#check"></use>
-    </svg>
-    <svg width="20" height="20">
-        <use xlink:href="./icons/sprite.svg#menu"></use>
-    </svg>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <button class="btn-open-menu">
+                    <svg width="32" height="31">
+                        <use class="blue" xlink:href="./icons/sprite.svg#menu"></use>
+                    </svg>
+                </button>
+                <a href="#" class="logo-wrapper">
+                    <svg width="137" height="30">
+                        <use xlink:href="./icons/sprite.svg#logo"></use>
+                    </svg>
+                </a>
+                <button class="btn-open-registration btn btn__pink">Join Now</button>
+            </div>
+        </header>
+    </div>
+    <script src="./js/main.js"></script>
 </body>
 </html>

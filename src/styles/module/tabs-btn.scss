@@ -7,6 +7,7 @@
     height: 4.4rem;
     background: rgba(255, 255, 255, 0.50);
     border-radius: 2.2rem;
+    animation: slide-in-bottom .5s .9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     @include flex(row, space-between, center);
     button {
         width: 11rem;
@@ -27,14 +28,14 @@
         height: 4.4rem;
         background-color: $pink;
         border-radius: 2.2rem;
-        transition: left .3s, right .3s;
+        box-shadow: 0 .6rem 1.2rem 0 rgba(82, 67, 194, 0.16);
+        transition: left .5s;
     }
 }
 
 .tabs-btn.tabs-btn__mon-active {
     &::before {
         left: 0;
-        right: auto;
     }
     .btn-mon-open {
         color: $white;
@@ -43,8 +44,7 @@
 
 .tabs-btn.tabs-btn__year-active {
     &::before {
-        left: auto;
-        right: 0;
+        left: 50%;
     }
     .btn-year-open {
         color: $white;

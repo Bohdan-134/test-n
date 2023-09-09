@@ -16,7 +16,6 @@
             transition: fill .3s;
         }
     }
-    
     &:hover {
         svg {
             use {
@@ -31,4 +30,10 @@
     border-radius: 2.5rem;
     font-family: $p-medium;
     @include font(1.4rem, 500, 1.8rem, $white);
+}
+
+@media screen and (max-width: 1050px) {
+    .btn-open-registration {
+        display: none;
+    }
 }

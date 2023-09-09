@@ -1,0 +1,157 @@
+@import "../utils/main.utils.scss";
+
+.block-cards-pricing {
+  margin-top: 9rem;
+  animation: slide-in-bottom .5s 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.cards-list {
+  padding: 4rem 6.8rem 0;
+  max-height: 46.7rem;
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.64);
+  @include flex(row, space-between, flex-start);
+}
+
+.card-item {
+    article {
+        min-height: 38.7rem;
+        @include flex(column, flex-start, flex-start);
+    }
+}
+
+.card-item-header {
+    margin-bottom: 2rem;
+    @include flex(row, flex-start, flex-end);
+    .card-price {
+        margin-right: .4rem;
+        font-family: $p-bold;
+        @include font(3.6rem, 700, 4.6rem, $darkblue);
+    }
+    .card-month {
+        font-family: $p-regular;
+        @include font(1.7rem, 400, 3.4rem, #848199)
+    }
+}
+
+.card-item-main {
+    max-width: 23.2rem;
+    flex-grow: 1;
+    .card-title {
+        margin-bottom: .6rem;
+        font-family: $p-medium;
+        @include font(2.8rem, 500, normal, $darkblue);
+    }
+    .card-subtitle {
+        margin-bottom: 1.5rem;
+        font-family: $p-regular;
+        @include font(1.5rem, 400, normal, #848199);
+    }
+}
+
+.card-advantages-list {
+    .card-advantages-item {
+        @include flex(row, null, center);
+        &:not(:last-child) {
+            margin-bottom: .8rem;
+        }
+        svg {
+            margin-right: 1rem;
+        }
+        .advantages-text {
+            font-family: $p-regular;
+            @include font(1.5rem, 400, normal, #848199);
+        }
+    }
+}
+
+.card-item-footer {
+    .btn {
+        padding: 1.1rem 5.5rem;
+        border-radius: 2.4rem;
+        font-family: $p-medium;
+        @include font(1.5rem, 500, normal, $white);
+    }
+}
+
+.card-item.card-item__dark {
+    padding: 2rem 3rem;
+    position: relative;
+    bottom: 7rem;
+    background-color: $darkblue;
+    border-radius: 2.6rem;
+    box-shadow: 0 4.2rem 3.4rem 0 rgba(82, 67, 194, 0.30);
+    .card-item-tag {
+        padding: .6rem 1.6rem;
+        margin: 0 0 2rem auto;
+        background: #403879;
+        border-radius: 13.5px;
+        font-family: $p-extra-bold;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        @include font(1rem, 800, normal, $pink);
+    }
+    .card-item-header {
+        .card-price {
+            color: $white;
+        }
+        .card-month {
+            color: $white;
+        }
+    }
+    .card-item-main {
+        .card-title {
+            color: $white;
+        }
+        .card-subtitle {
+            color: $white;
+        }
+        .card-advantages-list {
+            margin-bottom: 2rem;
+            .card-advantages-item {
+                .advantages-text {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .block-cards-pricing {
+        margin-top: 3rem;
+        .container {
+            max-width: 28.8rem;
+        }
+    }
+    .cards-list {
+        padding: 3.2rem 2.8rem .8rem;
+        max-height: none;
+        @include flex(column, null, center)
+    }
+    .card-advantages-list {
+        margin-bottom: 4rem;
+    }
+    .card-item {  
+        &:not(:last-child) {
+            margin-bottom: 5rem;
+        }
+        article {
+            min-height: auto;
+        }
+    }
+    .card-item-footer {
+        .btn {
+            width: 23.2rem;
+            @include font(1.5rem, 500, normal, $white);
+            @include flex(row, center, center);
+        }
+    }
+    .card-item.card-item__dark {
+        padding: 2rem;
+        position: static;
+        .card-item-tag {
+            margin: 0 auto 2rem auto;
+        }
+    }
+}

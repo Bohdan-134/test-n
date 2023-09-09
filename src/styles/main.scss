@@ -2,7 +2,7 @@
 @import './module/module.main.scss';
 
 .wrapper {
-    padding: 0 5rem;
+    padding: 0 5rem 7rem;
     min-height: 100%;
     background: linear-gradient(180deg, #F5F5FA 0%, #F2DAD5 44.15%, #A0ABD6 100%);
 }
@@ -11,4 +11,10 @@
     margin: 0 auto;
     width: 100%;
     max-width: 94rem;
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper {
+        padding: 0 1.6rem 6.5rem;
+    }
 }

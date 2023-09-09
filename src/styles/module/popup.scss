@@ -1,0 +1,45 @@
+@import '../utils/main.utils.scss';
+
+.popup-wrapper {
+    padding: 1.6rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff00;
+    backdrop-filter: blur(0px);
+    visibility: hidden;
+    transition: .5s;
+    @include flex(row, center, center);
+    .popup {
+        padding: 2rem;
+        width: 100%;
+        max-width: 40rem;
+        background-color: rgb(35, 29, 79, 0.9);
+        border-radius: 1.5rem;
+        transform: translateY(50%);
+        opacity: 0;
+        transition: .5s;
+        @include flex(row, center, center);
+        .popup-message {
+            font-family: $p-regular;
+            text-align: center;
+            @include font(2rem, 400, 2.5rem, $white);
+        }
+    }
+}
+
+body.popup-wrapper__active {
+    overflow: hidden;
+    .popup-wrapper {
+        background-color: #ffffff19;
+        backdrop-filter: blur(10px);
+        visibility: visible;
+        .popup {
+            transform: translateY(0%);
+            opacity: 1;
+        }
+    }
+}

@@ -4,6 +4,7 @@
     margin-top: 4rem;
     .plan-pricing-title {
         margin-bottom: 2.5rem;
+        animation: slide-in-bottom .5s .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         font-family: $p-regular;
         @include font(4rem, 400, normal, $darkblue);
     }
@@ -13,7 +14,37 @@
     @include flex(row, space-between, center);
     .plan-pricing-text {
         max-width: 58.4rem;
+        animation: slide-in-bottom .5s .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         font-family: $p-medium;
         @include font(1.8rem, 500, normal, #848199);
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .plan-pricing {
+        .plan-pricing-title {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+    }
+    .plan-pricing-footer {
+        @include flex(column, null, center);
+        .plan-pricing-text {
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .plan-pricing {
+        .plan-pricing-title {
+            text-align: left;
+        }
+    }
+    .plan-pricing-footer {
+        .plan-pricing-text {
+            text-align: left;
+        }
     }
 }

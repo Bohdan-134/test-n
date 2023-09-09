@@ -1,43 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="./css/main.css">
     <title>Jadwalin</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="header-container">
-                <button class="btn-open-menu">
-                    <svg width="32" height="31">
-                        <use class="blue" xlink:href="./icons/sprite.svg#menu"></use>
-                    </svg>
-                </button>
-                <a href="#" class="logo-wrapper">
-                    <svg width="137" height="30">
-                        <use xlink:href="./icons/sprite.svg#logo"></use>
-                    </svg>
-                </a>
-                <button class="btn-open-registration btn btn__pink">Join Now</button>
+      <header class="header">
+        <div class="header-container">
+          <button class="btn-open-menu btn-open-popup">
+            <svg width="32" height="31">
+              <use class="blue" xlink:href="./icons/sprite.svg#menu"></use>
+            </svg>
+          </button>
+          <a href="#" class="logo-wrapper">
+            <svg width="137" height="30">
+              <use xlink:href="./icons/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <button class="btn-open-registration btn btn__pink btn-open-popup">Join Now</button>
+        </div>
+      </header>
+      <main class="main">
+        <section class="plan-pricing">
+          <div class="container">
+            <h1 class="plan-pricing-title">Plans & Pricing</h1>
+            <div class="plan-pricing-footer">
+              <p class="plan-pricing-text">
+                Whether your time-saving automation needs are large or small,
+                we’re here to help you scale.
+              </p>
+              <div class="tabs-btn tabs-btn__mon-active">
+                <button class="btn-mon-open">MONTHLY</button>
+                <button class="btn-year-open">YEARLY</button>
+              </div>
             </div>
-        </header>
-        <main class="main">
-            <section class="plan-pricing">
-                <div class="container">
-                    <h1 class="plan-pricing-title">Plans & Pricing</h1>
-                    <div class="plan-pricing-footer">
-                        <p class="plan-pricing-text">Whether your time-saving automation needs are large or small, we’re here to help you scale.</p>
-                        <div class="tabs-btn tabs-btn__mon-active">
-                            <button class="btn-mon-open">MONTHLY</button>
-                            <button class="btn-year-open">YEARLY</button>
+          </div>
+        </section>
+        <div class="block-cards-pricing">
+          <div class="container">
+            <ul class="cards-list cards-mon-list">
+              <li class="card-item">
+                <article>
+                  <div class="card-item-header">
+                    <div class="card-price card-price__started">$19</div>
+                    <div class="card-month">/month</div>
+                  </div>
+                  <div class="card-item-main">
+                    <h3 class="card-title">Starter</h3>
+                    <p class="card-subtitle">
+                      Unleash the power of automation.
+                    </p>
+                    <ul class="card-advantages-list">
+                      <li class="card-advantages-item">
+                        <svg width="20" height="20">
+                          <use xlink:href="./icons/sprite.svg#check"></use>
+                        </svg>
+                        <div class="advantages-text">Multi-step Zaps</div>
+                      </li>
+                      <li class="card-advantages-item">
+                        <svg width="20" height="20">
+                          <use xlink:href="./icons/sprite.svg#check"></use>
+                        </svg>
+                        <div class="advantages-text">3 Premium Apps</div>
+                      </li>
+                      <li class="card-advantages-item">
+                        <svg width="20" height="20">
+                          <use xlink:href="./icons/sprite.svg#check"></use>
+                        </svg>
+                        <div class="advantages-text">2 Users team</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-item-footer">
+                    <button class="btn btn__darkblue btn-open-popup">Choose plan</button>
+                  </div>
+                </article>
+              </li>
+              <li class="card-item">
+                <article>
+                  <div class="card-item-header">
+                    <div class="card-price card-price__professional">$54</div>
+                    <div class="card-month">/month</div>
+                  </div>
+                  <div class="card-item-main">
+                    <h3 class="card-title">Professional</h3>
+                    <p class="card-subtitle">
+                      Advanced tools to take your work to the next level.
+                    </p>
+                    <ul class="card-advantages-list">
+                      <li class="card-advantages-item">
+                        <svg width="20" height="20">
+                          <use xlink:href="./icons/sprite.svg#check"></use>
+                        </svg>
+                        <div class="advantages-text">Multi-step Zaps</div>
+                      </li>
+                      <li class="card-advantages-item">
+                        <svg width="20" height="20">
+                          <use xlink:href="./icons/sprite.svg#check"></use>
+                        </svg>
+                        <div class="advantages-text">
+                          Unlimited Premium Apps
                         </div>
-                    </div>
-                </div>
-            </section>
-        </main>
+                      </li>
+                      <li class="card-advantages-item">
+                        <svg width="20" height="20">
+                          <use xlink:href="./icons/sprite.svg#check"></use>
+                        </svg>
+                        <div class="advantages-text">50 Users team</div>
+                      </li>
+                      <li class="card-advantages-item">
+                        <svg width="20" height="20">
+                          <use xlink:href="./icons/sprite.svg#check"></use>
+                        </svg>
+                        <div class="advantages-text">Shared Workspace</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-item-footer">
+                    <button class="btn btn__darkblue btn-open-popup">Choose plan</button>
+                  </div>
+                </article>
+              </li>
+              <li class="card-item card-item__dark">
+                <article>
+                  <div class="card-item-tag">MOST POPULAR</div>
+                  <div class="card-item-header">
+                    <div class="card-price card-price__сompany">$89</div>
+                    <div class="card-month">/month</div>
+                  </div>
+                  <div class="card-item-main">
+                    <h3 class="card-title">Company</h3>
+                    <p class="card-subtitle">
+                      Automation plus enterprise-grade features.
+                    </p>
+                    <ul class="card-advantages-list">
+                      <li class="card-advantages-item">
+                        <svg width="20" height="20">
+                          <use xlink:href="./icons/sprite.svg#check"></use>
+                        </svg>
+                        <div class="advantages-text">Multi-step Zap</div>
+                      </li>
+                      <li class="card-advantages-item">
+                        <svg width="20" height="20">
+                          <use xlink:href="./icons/sprite.svg#check"></use>
+                        </svg>
+                        <div class="advantages-text">
+                          Unlimited Premium Apps
+                        </div>
+                      </li>
+                      <li class="card-advantages-item">
+                        <svg width="20" height="20">
+                          <use xlink:href="./icons/sprite.svg#check"></use>
+                        </svg>
+                        <div class="advantages-text">Unlimited Users Team</div>
+                      </li>
+                      <li class="card-advantages-item">
+                        <svg width="20" height="20">
+                          <use xlink:href="./icons/sprite.svg#check"></use>
+                        </svg>
+                        <div class="advantages-text">Advanced Admin</div>
+                      </li>
+                      <li class="card-advantages-item">
+                        <svg width="20" height="20">
+                          <use xlink:href="./icons/sprite.svg#check"></use>
+                        </svg>
+                        <div class="advantages-text">Custom Data Retention</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-item-footer">
+                    <button class="btn btn__pink btn-open-popup">Choose plan</button>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="popup-wrapper">
+        <div class="popup">
+            <p class="popup-message">Oops! Something went wrong &#128532</p>
+        </div>
     </div>
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
